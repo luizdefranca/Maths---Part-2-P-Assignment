@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString * question;
 @property NSDate * startTime;
 @property NSDate * endTime;
+
 - (NSTimeInterval) timeDiference;
 
 @end

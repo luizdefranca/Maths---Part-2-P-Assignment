@@ -9,15 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
 #import "AdditionQuestion.h"
+#import "QuestionManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+
+        QuestionManager * questionManager = [[QuestionManager alloc] init];
+
         
         BOOL gameON = YES;
         while (gameON) {
             
             AdditionQuestion *question = [[AdditionQuestion alloc] init];
+            [[questionManager questions] addObject:question];
+
             NSLog(@"%@", [question question]);
             NSString *inputString = [InputHandler stringFromInput];
             
@@ -36,8 +41,10 @@ int main(int argc, const char * argv[]) {
                     number = [typedNumber integerValue];
                     if(number == [question answer]){
                         NSLog(@"%@", @"Right");
+                        NSLog(@"%@", [questionManager timeOutput]);
                     } else {
                         NSLog(@"%@", @"Wrong");
+                         NSLog(@"%@", [questionManager timeOutput]);
                     }
                 }
             }
