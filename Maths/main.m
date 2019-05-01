@@ -10,12 +10,13 @@
 #import "InputHandler.h"
 #import "AdditionQuestion.h"
 #import "QuestionManager.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         QuestionManager * questionManager = [[QuestionManager alloc] init];
-
+        ScoreKeeper * score = [[ScoreKeeper alloc] init];
         
         BOOL gameON = YES;
         while (gameON) {
@@ -40,10 +41,14 @@ int main(int argc, const char * argv[]) {
                 } else {
                     number = [typedNumber integerValue];
                     if(number == [question answer]){
+                        ++score.right;
                         NSLog(@"%@", @"Right");
+                        NSLog(@"%@", [score showScore]);
                         NSLog(@"%@", [questionManager timeOutput]);
                     } else {
+                        ++score.wrong;
                         NSLog(@"%@", @"Wrong");
+                         NSLog(@"%@", [score showScore]);
                          NSLog(@"%@", [questionManager timeOutput]);
                     }
                 }

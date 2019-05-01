@@ -11,6 +11,7 @@
 		253144172278C75F003DB95E /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 253144162278C75F003DB95E /* AdditionQuestion.m */; };
 		2531441A2278CE08003DB95E /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 253144192278CE08003DB95E /* InputHandler.m */; };
 		253144522279FDE4003DB95E /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253144512279FDE4003DB95E /* QuestionManager.m */; };
+		25314459227A0636003DB95E /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25314458227A0636003DB95E /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		253144502279FDE4003DB95E /* QuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		253144512279FDE4003DB95E /* QuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		253144532279FE23003DB95E /* Maths */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Maths; sourceTree = "<group>"; };
+		25314457227A0636003DB95E /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		25314458227A0636003DB95E /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				2531440E2278B015003DB95E /* main.m */,
 				253144152278C75F003DB95E /* AdditionQuestion.h */,
 				253144162278C75F003DB95E /* AdditionQuestion.m */,
+				25314457227A0636003DB95E /* ScoreKeeper.h */,
+				25314458227A0636003DB95E /* ScoreKeeper.m */,
 				253144182278CE08003DB95E /* InputHandler.h */,
 				253144192278CE08003DB95E /* InputHandler.m */,
 				253144502279FDE4003DB95E /* QuestionManager.h */,
@@ -135,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25314459227A0636003DB95E /* ScoreKeeper.m in Sources */,
 				2531440F2278B015003DB95E /* main.m in Sources */,
 				2531441A2278CE08003DB95E /* InputHandler.m in Sources */,
 				253144172278C75F003DB95E /* AdditionQuestion.m in Sources */,
