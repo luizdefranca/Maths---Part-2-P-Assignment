@@ -15,8 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype) init;
 @property (readonly)NSInteger leftSide;
 @property (readonly) NSInteger rightSide;
-@property (readonly) NSInteger answer;
-@property (readonly) NSString *question;
+@property  (nonatomic) NSInteger answer;
+@property (readonly) NSString * question;
+@property NSDate * startTime;
+@property NSDate * endTime;
+- (NSTimeInterval) timeDiference;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,8 +17,21 @@
         _rightSide = 10 + arc4random_uniform((uint32_t)(100 - 10 + 1));;
         _answer = _leftSide + _rightSide;
         _question =  [[NSString alloc] initWithFormat: @"%lu + %lu = ?", _leftSide, _rightSide];
-
+        _startTime = [NSDate date];
     }
     return self;
 }
+
+// overriding getter
+
+- (NSInteger) answer {
+    _endTime = [NSDate date];
+    return _answer;
+}
+
+- (NSTimeInterval) timeDiference{
+
+    return [_endTime timeIntervalSinceDate:_startTime];
+}
+
 @end
