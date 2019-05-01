@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  QuestionFactory.h
 //  Maths
 //
 //  Created by Luiz on 5/1/19.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "Question.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AdditionQuestion : Question
+@interface QuestionFactory : NSObject
 
+-(Question *) generateRandomQuestion;
 @end
 
 NS_ASSUME_NONNULL_END
